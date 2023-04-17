@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hangman.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" >
+        <!-- Hangman image here -->
+        <Image x:Name="hangmanImage" Source="hangman0.jpg" HeightRequest="200" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+        <Label x:Name="wordLabel" Text="H _ _ _ _" FontSize="Large" Margin="0,0,0,20" />
+        <!-- Keyboard grid -->
+        <Grid ColumnSpacing="10" RowSpacing="10" x:Name="buttonsPanel">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- Buttons for letters -->
+            
+            <Button Grid.Row="0" Grid.Column="0" Text="A" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="0" Grid.Column="1" Text="B" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="0" Grid.Column="2" Text="C" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="0" Grid.Column="3" Text="D" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="0" Grid.Column="4" Text="E" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="0" Grid.Column="5" Text="F" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="0" Grid.Column="6" Text="G" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="1" Grid.Column="0" Text="H" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="I" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="1" Grid.Column="2" Text="J" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="1" Grid.Column="3" Text="K" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="1" Grid.Column="4" Text="L" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="1" Grid.Column="5" Text="M" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="1" Grid.Column="6" Text="N" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="2" Grid.Column="0" Text="O" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="2" Grid.Column="1" Text="P" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="2" Grid.Column="2" Text="Q" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="2" Grid.Column="3" Text="R" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="2" Grid.Column="4" Text="S" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="2" Grid.Column="5" Text="T" Clicked="OnButtonClicked"/>
+            <Button Grid.Row="2" Grid.Column="6" Text="U" Clicked="OnButtonClicked"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
